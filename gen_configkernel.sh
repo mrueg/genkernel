@@ -265,6 +265,7 @@ config_kernel() {
 			CONFIG_VHOST_NET \
 			\
 			CONFIG_FW_CFG_SYSFS \
+			CONFIG_FW_CFG_SYSFS_CMDLINE \
 			; do
 			cfg___virtio_opt=$(kconfig_get_opt "${KERNEL_OUTPUTDIR}/.config" "$k")
 			case "$cfg___virtio_opt" in
